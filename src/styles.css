@@ -63,7 +63,7 @@ body {
 }
 .navbar{
   margin-bottom:15px;
-  background-color: #ffffff;
+  background-color: #000 !important;
   position: relative;
   min-height: 50px;
   border-bottom:solid 3px #007bc4;
