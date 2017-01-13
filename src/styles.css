@@ -1,16 +1,85 @@
 /* You can add global styles to this file, and also import other style files */
 
 body {
-	background-color:#fff;
+	background-color:#f2f2f2;
 	font-size: 14px;
 	line-height: 1.42857143;
 	color: #333;
 }
-.nav {
-	height:73px;
-	width:auto;
-	border-bottom: 1px solid rgb(0, 123, 196);
+.contact-info {
+  width:203px;
+  height:70px;
+  float:right;
+  color: #b7b7b7;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  padding-top:5px;
 }
-.nav-header {
-	padding:1%;
+.contact-info:hover {
+  text-decoration:none;
+  cursor:pointer;
+  color: #b7b7b7;
+}
+.customer-service {
+  float:right;
+}
+.fa-phone {
+  color:#007bc4;
+}
+.footer {
+  font-size: 14px;
+  color: #ffffff;
+  background-color: #003260;
+  padding: 15px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.info-number {
+  line-height: 0;
+  font-size: 18px;
+  color: #5C5C5C;
+  float:right;
+}
+.head-link {
+  color: #5C5C5C;
+  float:left;
+  height:70px;
+  width:40vw;
+  padding-left:15px;
+  padding-top:18px;
+}
+.head-link:hover {
+  background-color: #eaeaea;
+  text-decoration:none;
+  cursor:pointer;
+  transition: all 0.3s ease 0s;
+  transition-property: all;
+  transition-duration: 0.3s;
+  transition-timing-function: ease;
+  transition-delay: 0s;
+}
+.navbar{
+  margin-bottom:15px;
+  background-color: #ffffff;
+  position: relative;
+  min-height: 50px;
+  border-bottom:solid 3px #007bc4;
+}
+.navbar-brand {
+  float:left;
+  height:70px;
+  padding-top: 15px;
+  padding-right: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  font-size: 18px;
+  line-height: 20px;
+  border-right: solid 1px #d7d7d7;
+}
+img {
+  width:159px;
+  height:40px;
 }
