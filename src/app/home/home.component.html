@@ -1,0 +1,239 @@
+<button (click)="value=1; subvalue=1">select - 1</button>
+  <button (click)="value=2; subvalue=5">select - 2</button>
+  <button (click)="value=3; subvalue=9">select - 3</button>
+
+  <div [ngSwitch]="value">
+  	<!-- Step 1 -->
+     <div *ngSwitchCase="1">
+		 
+		<ul class="col-md-2 submenu">
+			<li (click)="value=1; subvalue=1"> Item 1</li>
+			<li (click)="value=1; subvalue=2"> Item 2</li>
+			<li (click)="value=1; subvalue=3"> Item 3</li>
+			<li (click)="value=1; subvalue=4"> Item 4</li>
+		</ul>
+		
+		<div [ngSwitch]="subvalue">
+			<div *ngSwitchCase="1">
+				<form class="col-md-4">
+				  <h3> This is Step 1</h3>
+				  <h4> Item 1</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=1; subvalue=2">Item 2</button>
+				</form>
+			</div>
+			
+			<div *ngSwitchCase="2">
+				<form class="col-md-4">
+				  <h3> This is Step 1</h3>
+				  <h4> Item 2</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=1; subvalue=3">Item 3</button>
+				</form>
+			</div>
+			
+			<div *ngSwitchCase="3">
+				<form class="col-md-4">
+				  <h3> This is Step 1</h3>
+				  <h4> Item 3</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=1; subvalue=4">Item 4</button>
+				</form>
+			</div>
+			
+			<div *ngSwitchCase="4">
+				<form class="col-md-4">
+				  <h3> This is Step 1</h3>
+				  <h4> Item 4</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=2; subvalue=5">Step 2</button>
+				</form>
+			</div>
+			
+		</div>	
+	 </div>
+	 <!-- Step 2 -->
+     <div *ngSwitchCase="2">
+		 
+ 		<ul class="col-md-2 submenu">
+ 			<li (click)="value=2; subvalue=5"> Item 1</li>
+ 			<li (click)="value=2; subvalue=6"> Item 2</li>
+ 			<li (click)="value=2; subvalue=7"> Item 3</li>
+ 			<li (click)="value=2; subvalue=8"> Item 4</li>
+ 		</ul>
+		 
+		<div [ngSwitch]="subvalue">
+			<div *ngSwitchCase="5">
+				<form class="col-md-4">
+				  <h3> This is Step 2</h3>
+				  <h4> Item 1</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=2; subvalue=6">Item 2</button>
+				</form>
+			</div>
+			
+			<div *ngSwitchCase="6">
+				<form class="col-md-4">
+				  <h3> This is Step 2</h3>
+				  <h4> Item 2</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=2; subvalue=7">Item 3</button>
+				</form>
+			</div>
+			
+			<div *ngSwitchCase="7">
+				<form class="col-md-4">
+				  <h3> This is Step 2</h3>
+				  <h4> Item 3</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=2; subvalue=8">Item 4</button>
+				</form>
+			</div>
+			
+			<div *ngSwitchCase="8">
+				<form class="col-md-4">
+				  <h3> This is Step 2</h3>
+				  <h4> Item 4</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=3">Step 3</button>
+				</form>
+			</div>
+			
+		</div>
+	 </div>
+     <div *ngSwitchCase="3">
+		 
+ 		<ul class="col-md-2 submenu">
+ 			<li (click)="value=3; subvalue=9"> Item 1</li>
+ 			<li (click)="value=3; subvalue=10"> Item 2</li>
+ 			<li (click)="value=3; subvalue=11"> Item 3</li>
+ 			<li (click)="value=3; subvalue=12"> Item 4</li>
+ 		</ul>
+		 
+		<div [ngSwitch]="subvalue">
+			<div *ngSwitchCase="9">
+				<form class="col-md-4">
+				  <h3> This is Step 3</h3>
+				  <h4> Item 1</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=3; subvalue=10">Item 2</button>
+				</form>
+			</div>
+			
+			<div *ngSwitchCase="10">
+				<form class="col-md-4">
+				  <h3> This is Step 3</h3>
+				  <h4> Item 2</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=3; subvalue=11">Item 3</button>
+				</form>
+			</div>
+			
+			<div *ngSwitchCase="11">
+				<form class="col-md-4">
+				  <h3> This is Step 3</h3>
+				  <h4> Item 3</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button" (click)="value=3; subvalue=12">Item 4</button>
+				</form>
+			</div>
+			
+			<div *ngSwitchCase="12">
+				<form class="col-md-4">
+				  <h3> This is Step 3</h3>
+				  <h4> Item 4</h4>
+				  <div class="form-group">
+				    <label for="exampleInputEmail1">Email address</label>
+				    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
+				  </div>
+				  <div class="form-group">
+				    <label for="exampleInputPassword1">Password</label>
+				    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+				  </div>
+				  <button type="button">Submit</button>
+				</form>
+			</div>
+			
+		</div>
+		
+	 </div>
+     <div *ngSwitchDefault>Default Template</div>
+  
+  </div>
